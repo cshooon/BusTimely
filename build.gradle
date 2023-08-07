@@ -36,3 +36,8 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+bootJar {
+    archivesBaseName='busTimely'
+    archiveFileName='busTimely.jar'
+}
