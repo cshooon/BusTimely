@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-image: url("busstop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-container {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.result-box {
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+div.bus-info {
+    margin-bottom: 15px;
+}
+
+.bus-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#resultLeft {
+    height: 500px;
+    width: 300px
+}
+
+#resultRight {
+    height: 100px;
+    width: 200px;
+}
+@media (max-width: 600px) {
+    .search-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

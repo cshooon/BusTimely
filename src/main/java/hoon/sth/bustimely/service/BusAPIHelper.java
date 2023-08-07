@@ -18,7 +18,7 @@ import java.util.Map;
 @Component
 public class BusAPIHelper {
     private static final String BASE_URL = "http://ws.bus.go.kr/api/rest/arrive/";
-    private static final String SERVICE_KEY = "";
+    private static final String SERVICE_KEY = System.getenv("SK");
 
     public String buildURLForRoute(String routeId) {
         return BASE_URL + "getArrInfoByRouteAll?serviceKey=" + SERVICE_KEY + "&busRouteId=" + routeId;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버스 도착 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>버스 도착 정보 검색</h1>
+
+<div class="search-wrapper">
+    <div class="search-container">
+        <h2>경로명(버스 번호)으로 검색</h2>
+        <label>Route: <input type="text" id="routeNameOnly"></label>
+        <button onclick="searchByRoute()">Search</button>
+        <div id="resultLeft" class="result-box"></div>
+    </div>
+    <div class="search-container">
+        <h2>경로명 & 정류장명으로 검색</h2>
+        <label>Route: <input type="text" id="routeName"></label><br>
+        <label>Station: <input type="text" id="stationName"></label>
+        <button onclick="searchByRouteAndStation()">Search</button>
+        <div id="resultRight" class="result-box"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
