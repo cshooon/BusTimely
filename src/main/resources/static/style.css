@@ -3,7 +3,7 @@ body {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    background-image: url("busstop.png");
+    background-image: url("image/busstop.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
