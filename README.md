@@ -43,4 +43,19 @@ public interface BusStopRepository extends JpaRepository<BusStop, Long> {
 
 버스 정보를 가져오기 위해 [서울 열린 데이터 광장](https://data.seoul.go.kr/dataList/OA-1095/L/1/datasetView.do) 버스 정보 파일을 사용하고 있습니다. 갈 때, 올 때 2가지 정류장이 있어 jpa에서 정보를 불러올 때 noUniqueException이 납니다. 두 정보를 모두 사용해야 하므로 이 부분은 공부를 더 해야 할 것 같습니다. 🥲🥲
 
-프런트는 프로젝트 기한 내로 완성할 예정입니다.
+## front-end
+### HTML 구조
+1. 버스 도착 정보 검색: 메인 제목입니다.
+1. 경로명(버스 번호)으로 검색: 사용자가 버스 번호만으로 검색할 수 있는 섹션입니다.
+1. 경로명 & 정류장명으로 검색: 사용자가 버스 번호와 정류장명으로 검색할 수 있는 섹션입니다.
+   
+### Javascript 함수
+1. searchByRoute(): 경로명(버스 번호)으로 정보를 검색합니다.
+1. searchByRouteAndStation(): 경로명과 정류장명으로 정보를 검색합니다.
+1. search(url, resultId): 실제로 서버에 검색 요청을 보내고 결과를 DOM에 표시하는 함수입니다.
+
+### CSS
+모바일에서도 브라우저 창 크기를 줄여도 잘 실행되도록 display을 flex로 설정했습니다.
+
+## 배포
+자동 배포하려고 했으나 build/libs/*.jar로 설정해도 jar 파일을 계속 찾지 못해 수동으로 jar 파일을 넣어주고 배표했습니다. 😢😢
