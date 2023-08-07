@@ -65,4 +65,4 @@ public interface BusStopRepository extends JpaRepository<BusStop, Long> {
 
 <img width="800" alt="Screenshot 2023-08-07 at 5 29 17 PM" src="https://github.com/cshooon/BusTimely/assets/113033780/ae3c5dae-2565-4548-aa8a-29691055ef7f">
 
-왼쪽은 우성아파트 정류장이 1분 전이라고 뜨지만 오른쪽은 곧 도착이라고 뜹니다. 이처럼 공공데이터 open api에서 교통상황에 따라 실시간으로 시간을 업데이트해줍니다.
+왼쪽은 우성아파트 정류장이 1분 전이라고 뜨지만 오른쪽은 곧 도착이라고 뜹니다(조금 나중에 search 누름). 이처럼 공공데이터 open api에서 교통상황에 따라 실시간으로 시간을 업데이트해줍니다.
