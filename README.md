@@ -58,7 +58,7 @@ public interface BusStopRepository extends JpaRepository<BusStop, Long> {
 모바일에서도 브라우저 창 크기를 줄여도 잘 실행되도록 display을 flex로 설정했습니다.
 
 ## 배포
-자동 배포하려고 했으나 build/libs/*.jar로 설정해도 jar 파일을 계속 찾지 못해 수동으로 jar 파일을 넣어주고 배표했습니다. 😢😢
+자동 배포하려고 했으나 build/libs/*.jar로 설정해도 jar 파일을 계속 찾지 못해 수동으로 jar 파일을 넣어주고 배포했습니다. 😢😢
 
 ## 링크 및 캡처
 [BusTimely](https://bus-timely-b3ef15c015ed.herokuapp.com/)
